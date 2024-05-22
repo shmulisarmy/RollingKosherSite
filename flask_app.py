@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 email_address = "shmulikeller@gmail.com"
 
-@app.route('/')
+@app.route('/page')
 def index():
     return render_template('main.html', email_address=email_address)
 

@@ -96,6 +96,39 @@
         .item:hover {
             transform: scale(1.1);
         }
+
+
+
+    .store-hours-table {
+        width: 60%;
+        max-width: 600px;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .store-hours-table th, .store-hours-table td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    .store-hours-table th {
+        background-color: #4CAF50;
+        color: white;
+    }
+    .store-hours-table td {
+        background-color: #f9f9f9;
+    }
+    .store-hours-table tr:nth-child(even) td {
+        background-color: #f2f2f2;
+    }
+    .store-hours-table tr:hover td {
+        background-color: #e2e2e2;
+    }
+    .store-hours-table .closed {
+        color: red;
+    }
+
     </style>
 </head>
 
@@ -113,6 +146,57 @@
             send your order to us via email (by clicking on "Place an oreder")
         </div>
     </nav>
+
+
+<table class="store-hours-table">
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Open</th>
+            <th>Close</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Monday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>9:00 AM</td>
+            <td>6:00 PM</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>10:00 AM</td>
+            <td>4:00 PM</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td colspan="2" class="closed">Closed</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
 
     <main>
 
